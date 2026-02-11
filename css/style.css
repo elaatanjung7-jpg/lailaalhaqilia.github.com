@@ -8,14 +8,14 @@
 
 /* BODY */
 body {
-  background: #fffaf6;
-  color: #333;
+  background: #eaf4ff; /* biru muda lembut */
+  color: #1f2d3d;
   line-height: 1.7;
 }
 
 /* NAVBAR */
 nav {
-  background: #5b3a29;
+  background: #0d3b66; /* biru tua */
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
@@ -42,59 +42,65 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffd9b3;
+  color: #90caf9; /* biru muda */
 }
 
 /* HERO */
 .hero {
-  background: #ffeaea;
-  padding: 80px 20px;
+  background: linear-gradient(135deg, #bbdefb, #90caf9); /* gradasi biru */
+  padding: 90px 20px;
   text-align: center;
 }
 
 .hero h1 {
   font-size: 42px;
   font-weight: 700;
+  color: #0d3b66;
   margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 18px;
-  color: #555;
+  color: #2c3e50;
   margin-bottom: 25px;
 }
 
+/* BUTTON */
 .btn {
   display: inline-block;
-  background: #5b3a29;
+  background: #0d3b66;
   color: white;
   padding: 12px 25px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #7a4d36;
+  background: #145da0;
 }
 
 /* SECTION */
 section {
+  background: white;
   padding: 70px 20px;
+  margin: 40px auto;
   max-width: 900px;
-  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   text-align: center;
 }
 
 section h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  font-weight: 600;
+  color: #0d3b66;
 }
 
 section p {
   font-size: 17px;
-  color: #555;
+  color: #444;
 }
 
 /* RESPONSIVE */
