@@ -1,117 +1,89 @@
-/* ===== RESET ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/* =========================
+   WARNA DASAR (VARIABLE)
+========================= */
+:root {
+  --pink-soft: #fde2e4;
+  --pink-light: #fff1f2;
+  --brown-main: #6f4e37;
+  --brown-hover: #5a3e2b;
+  --text-dark: #3a2a1a;
+  --white: #ffffff;
 }
 
+/* =========================
+   BODY / BACKGROUND UTAMA
+========================= */
 body {
-    background-color: #f6f4ef;
-    color: #333;
-    line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--pink-soft);
+  color: var(--text-dark);
 }
 
-
-/* ===== NAVBAR ===== */
+/* =========================
+   NAVBAR / MENU ATAS
+========================= */
 .navbar {
-    background: #6b4f3b;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+  background-color: var(--brown-main);
+  padding: 15px 30px;
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    margin-left: 18px;
-    font-size: 14px;
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+  color: #ffd6a5;
 }
 
-
-/* ===== SECTION ===== */
+/* =========================
+   SECTION / KONTEN
+========================= */
 .section {
-    padding: 60px 10%;
+  background-color: var(--pink-light);
+  padding: 60px 20px;
+  text-align: center;
 }
 
-h2 {
-    margin-bottom: 20px;
-    color: #6b4f3b;
-}
-
-
-/* ===== HERO ===== */
-.hero {
-    height: 80vh;
-    background: url('../images/hero.jpg') center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
+/* =========================
+   TOMBOL
+========================= */
+button,
 .btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #a7bfa3;
-    color: black;
-    border-radius: 6px;
-    text-decoration: none;
+  background-color: var(--brown-main);
+  color: var(--white);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-
-/* ===== GRID BUKU ===== */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 20px;
+button:hover,
+.btn:hover {
+  background-color: var(--brown-hover);
 }
 
+/* =========================
+   CARD / BOX
+========================= */
 .card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 15px;
 }
 
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-
-/* ===== LAYANAN ===== */
-.services {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.service {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 150px;
-    text-align: center;
-}
-
-
-/* ===== FOOTER ===== */
+/* =========================
+   FOOTER
+========================= */
 footer {
-    background: #6b4f3b;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: var(--brown-main);
+  color: var(--white);
+  text-align: center;
+  padding: 15px;
 }
-
