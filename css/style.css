@@ -1,89 +1,105 @@
-/* =========================
-   WARNA DASAR (VARIABLE)
-========================= */
-:root {
-  --pink-soft: #fde2e4;
-  --pink-light: #fff1f2;
-  --brown-main: #6f4e37;
-  --brown-hover: #5a3e2b;
-  --text-dark: #3a2a1a;
-  --white: #ffffff;
-}
-
-/* =========================
-   BODY / BACKGROUND UTAMA
-========================= */
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: var(--pink-soft);
-  color: var(--text-dark);
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* =========================
-   NAVBAR / MENU ATAS
-========================= */
-.navbar {
-  background-color: var(--brown-main);
-  padding: 15px 30px;
+/* BODY */
+body {
+  background: #fffaf6;
+  color: #333;
+  line-height: 1.7;
 }
 
-.navbar a {
-  color: var(--white);
+/* NAVBAR */
+nav {
+  background: #5b3a29;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
   text-decoration: none;
-  margin-right: 20px;
   font-weight: 500;
+  transition: 0.3s;
 }
 
-.navbar a:hover {
-  color: #ffd6a5;
+nav ul li a:hover {
+  color: #ffd9b3;
 }
 
-/* =========================
-   SECTION / KONTEN
-========================= */
-.section {
-  background-color: var(--pink-light);
-  padding: 60px 20px;
+/* HERO */
+.hero {
+  background: #ffeaea;
+  padding: 80px 20px;
   text-align: center;
 }
 
-/* =========================
-   TOMBOL
-========================= */
-button,
+.hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
 .btn {
-  background-color: var(--brown-main);
-  color: var(--white);
-  border: none;
+  display: inline-block;
+  background: #5b3a29;
+  color: white;
   padding: 12px 25px;
   border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-button:hover,
 .btn:hover {
-  background-color: var(--brown-hover);
+  background: #7a4d36;
 }
 
-/* =========================
-   CARD / BOX
-========================= */
-.card {
-  background-color: var(--white);
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 15px;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  background-color: var(--brown-main);
-  color: var(--white);
+/* SECTION */
+section {
+  padding: 70px 20px;
+  max-width: 900px;
+  margin: auto;
   text-align: center;
-  padding: 15px;
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+section p {
+  font-size: 17px;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1 {
+    font-size: 30px;
+  }
 }
