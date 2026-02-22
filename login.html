@@ -3,20 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login - Perpustakaan Laila</title>
+<title>Login / Daftar - Laila Library</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div class="form-container">
-    <h2>Login / Register</h2>
+    <h2>Form Pendaftaran</h2>
 
-    <input type="text" id="name" placeholder="Nama">
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="text" id="lastName" placeholder="Last Name">
+    <input type="text" id="phone" placeholder="No Handphone">
     <input type="email" id="email" placeholder="Email">
     <input type="password" id="password" placeholder="Password">
 
-    <button onclick="register()" class="btn-form">Daftar</button>
-    <button onclick="login()" class="btn-form">Login</button>
+    <button class="btn-form" onclick="register()">Daftar</button>
+
+    <hr style="margin:20px 0;">
+
+    <h2>Login</h2>
+
+    <input type="text" id="loginFirstName" placeholder="First Name">
+    <input type="text" id="loginLastName" placeholder="Last Name">
+    <input type="password" id="loginPassword" placeholder="Password">
+
+    <button class="btn-form" onclick="login()">Login</button>
 </div>
 
 <script src="js/script.js"></script>
