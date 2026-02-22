@@ -29,6 +29,10 @@
 <footer>
     <p>© 2026 Perpustakaan Umum Laila</p>
 </footer>
-
+<script>
+    if (!localStorage.getItem("isLogin")) {
+        window.location.href = "login.html";
+    }
+</script>
 </body>
 </html>
