@@ -1,193 +1,34 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Umum Laila</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perpustakaan Umum Laila</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: #333;
-        }
-
-        header {
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            backdrop-filter: blur(5px);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-        }
-
-        nav {
-            background: white;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        nav a {
-            text-decoration: none;
-            margin: 0 20px;
-            color: #764ba2;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #ff9800;
-        }
-
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .card {
-            background: white;
-            max-width: 900px;
-            margin: auto;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        .card h2 {
-            margin-bottom: 20px;
-            color: #764ba2;
-        }
-
-        .social-links {
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            color: white;
-            transition: 0.3s;
-        }
-
-        .instagram {
-            background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
-        }
-
-        .youtube {
-            background: #ff0000;
-        }
-
-        .social-links a:hover {
-            transform: scale(1.1);
-        }
-
-        iframe {
-            margin-top: 30px;
-            width: 100%;
-            max-width: 600px;
-            height: 350px;
-            border-radius: 15px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0,0,0,0.6);
-            color: white;
-            margin-top: 40px;
-        }
-
-        @keyframes fadeIn {
-            from {opacity: 0; transform: translateY(30px);}
-            to {opacity: 1; transform: translateY(0);}
-        }
-
-        @media(max-width: 768px){
-            header h1 {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>📚 Perpustakaan Umum Laila</h1>
-        <p>Membuka Jendela Dunia Lewat Buku & Inspirasi ✨</p>
-    </header>
-
+<header>
+    <div class="logo">📚 Laila Library</div>
     <nav>
-        <a href="#beranda">Beranda</a>
-        <a href="#tentang">Tentang Saya</a>
-        <a href="#media">Media Sosial</a>
+        <a href="index.html">Beranda</a>
+        <a href="cv.html">Profil</a>
+        <a href="contact.html">Kontak</a>
+        <a href="login.html" class="btn-login">Login</a>
     </nav>
+</header>
 
-    <section id="beranda">
-        <div class="card">
-            <h2>Selamat Datang 🌸</h2>
-            <p>
-                Selamat datang di website resmi Perpustakaan Umum Laila. 
-                Tempat di mana literasi, inspirasi, dan kreativitas bertemu. 
-                Mari bersama-sama membangun budaya membaca dan menumbuhkan semangat belajar tanpa batas.
-            </p>
-        </div>
-    </section>
+<section class="hero">
+    <h1>Perpustakaan Umum Laila</h1>
+    <p>Membuka Jendela Dunia Lewat Buku & Inspirasi ✨</p>
+    <a href="cv.html" class="btn">Lihat Profil Saya</a>
+</section>
 
-    <section id="tentang">
-        <div class="card">
-            <h2>Tentang Saya – Mari Kenali Saya Lebih Dekat 💫</h2>
-            <p>
-                Halo! Saya adalah pengelola Perpustakaan Umum Laila yang memiliki kecintaan besar terhadap dunia pendidikan dan literasi. 
-                Saya percaya bahwa setiap buku adalah jendela ilmu dan setiap pembaca adalah calon pemimpin masa depan.
-            </p>
-            <p>
-                Melalui platform ini, saya ingin berbagi inspirasi, kegiatan literasi, serta perjalanan saya dalam mengembangkan perpustakaan ini.
-                Yuk, kenali saya lebih jauh melalui media sosial saya!
-            </p>
-        </div>
-    </section>
-
-    <section id="media">
-        <div class="card">
-            <h2>Ikuti & Kunjungi Media Sosial Saya 🎥📸</h2>
-            <div class="social-links">
-                <a href="https://www.instagram.com/laila_alhaqilia_12?igsh=cGRseTZhcXJ1MjZu" target="_blank" class="instagram">
-                    Instagram
-                </a>
-                <a href="https://youtu.be/Zg5YueS8em4?si=nrE5K8UWSDnzeJZa" target="_blank" class="youtube">
-                    YouTube
-                </a>
-            </div>
-
-            <!-- Embed YouTube -->
-            <iframe src="https://www.youtube.com/embed/Zg5YueS8em4" 
-            frameborder="0" 
-            allowfullscreen>
-            </iframe>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Perpustakaan Umum Laila | All Rights Reserved</p>
-    </footer>
+<footer>
+    <p>© 2026 Perpustakaan Umum Laila</p>
+</footer>
 
 </body>
 </html>
