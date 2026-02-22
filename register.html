@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar - Laila Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<div class="auth-container">
+    <div class="auth-card">
+
+        <h2>Form Pendaftaran</h2>
+
+        <form id="registerForm">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="text" id="phone" placeholder="No Handphone" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+
+            <button type="submit" class="auth-btn">Daftar</button>
+        </form>
+
+        <div class="divider"></div>
+
+        <p class="switch-auth">
+            Sudah punya akun? 
+            <a href="login.html">Login</a>
+        </p>
+
+        <div id="successMsg" class="success-msg">
+            Pendaftaran berhasil! Mengalihkan ke login...
+        </div>
+
+    </div>
+</div>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let userData = {
+        first: document.getElementById("firstName").value,
+        last: document.getElementById("lastName").value,
+        phone: document.getElementById("phone").value,
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value
+    };
+
+    localStorage.setItem("userData", JSON.stringify(userData));
+    document.getElementById("successMsg").style.display = "block";
+
+    setTimeout(() => {
+        window.location.href = "login.html";
+    }, 1500);
+});
+</script>
+
+</body>
+</html>
